@@ -1,0 +1,70 @@
+{
+    "3": {
+        "inputs": {
+            "image": "WhatsApp_Image_2024-09-16_at_16.04.53_8bd2201c.jpg",
+            "upload": "image"
+        },
+        "class_type": "LoadImage"
+    },
+    "4": {
+        "inputs": {
+            "image": "2024-01-20_16-54-24_2059_input_V2A9GLNFYR.png",
+            "upload": "image"
+        },
+        "class_type": "LoadImage"
+    },
+    "7": {
+        "inputs": {
+            "ckpt_name": "majicmixRealistic_v7.safetensors",
+            "clip": "openai/clip-vit-large-patch14",
+            "scheduler": "DDIM"
+        },
+        "class_type": "StableMakeup_LoadModel"
+    },
+    "8": {
+        "inputs": {
+            "filename_prefix": "ComfyUI",
+            "images": [
+                "9",
+                0
+            ]
+        },
+        "class_type": "SaveImage"
+    },
+    "9": {
+        "inputs": {
+            "facedetector": "mobilenet",
+            "dataname": "300wpublic",
+            "cfg": 1.6,
+            "steps": 30,
+            "width": 512,
+            "height": 512,
+            "id_image": [
+                "3",
+                0
+            ],
+            "makeup_image": [
+                "4",
+                0
+            ],
+            "pipe": [
+                "7",
+                0
+            ],
+            "makeup_encoder": [
+                "7",
+                1
+            ]
+        },
+        "class_type": "StableMakeup_Sampler"
+    },
+    "84": {
+        "inputs": {
+            "images": [
+                "9",
+                0
+            ]
+        },
+        "class_type": "PreviewImage"
+    }
+}
