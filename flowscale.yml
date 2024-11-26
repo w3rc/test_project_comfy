@@ -1,4 +1,4 @@
-version: 0
+version: 1
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -9,8 +9,31 @@ workflows:
     file: test/makeup_api.json
     version: 1
     description: ''
-    inputs: []
-    outputs: []
+    inputs:
+      - path: 3.inputs.image
+        label: ''
+        parameter_name: image_38482
+        type: string
+        demo_type: image
+        category: input
+        randomize: false
+      - path: 4.inputs.image
+        label: ''
+        parameter_name: image_14631
+        type: string
+        demo_type: image
+        category: input
+        randomize: false
+      - path: 8.inputs.filename_prefix
+        label: filename_prefix
+        parameter_name: filename_prefix_13555
+        type: string
+        demo_type: text
+        category: output
+        randomize: true
+    outputs:
+      - label: ''
+        demo_type: image
     skip_preprocess: true
 normal_workflows:
   - id: 9a95vx87drl
