@@ -3,9 +3,17 @@ models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
-workflows: []
+workflows:
+  - id: 2sl4a0y6mqs
+    name: makeup_api.json
+    file: test/makeup_api.json
+    version: 1
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: 9a95vx87drl
     name: makeup.json
     file: test/makeup.json
-    version: 0
+    version: 1
