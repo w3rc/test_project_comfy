@@ -20,7 +20,9 @@
       "StableMakeup_Sampler"
     ],
     "apt": [],
-    "pip": [],
+    "pip": [
+      "diffusers"
+    ],
     "preemptions": [],
     "cached": "False"
   }
