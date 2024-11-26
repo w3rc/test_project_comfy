@@ -1,3 +1,27 @@
-
-[]
-      
+[
+  {
+    "name": "ComfyUI_Stable_Makeup",
+    "url": "https://github.com/smthemex/ComfyUI_Stable_Makeup",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "smthemex",
+      "title": "ComfyUI_Stable_Makeup",
+      "id": "Stable_Makeup",
+      "reference": "https://github.com/smthemex/ComfyUI_Stable_Makeup",
+      "files": [
+        "https://github.com/smthemex/ComfyUI_Stable_Makeup"
+      ],
+      "install_type": "git-clone",
+      "description": "You can apply makeup to the characters in comfyui\nStable_Makeup From: [a/Stable_Makeup](https://github.com/Xiaojiu-z/Stable-Makeup)"
+    },
+    "nodes": [
+      "StableMakeup_LoadModel",
+      "StableMakeup_Sampler"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  }
+]
